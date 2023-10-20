@@ -2,9 +2,10 @@
 """
 starts a Flask web application.
 Routes:
-    /: display “Hello HBNB!”
+    /: display 'Hello HBNB!'
 """
 from flask import Flask
+
 app = Flask(__name__)
 
 
