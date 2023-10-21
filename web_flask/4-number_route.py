@@ -25,7 +25,7 @@ def hbnb():
 def c(text):
     """display C <text>!"""
     text = text.replace("_", " ")
-    return f"C, {escape(text)}"
+    return f"C {escape(text)}"
 
 @app.route("/python/<text>", strict_slashes=False)
 @app.route("/python", strict_slashes=False)
