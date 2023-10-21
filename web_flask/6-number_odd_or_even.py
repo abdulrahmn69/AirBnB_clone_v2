@@ -54,7 +54,7 @@ def numberTemp(n):
         return render_template("5-number.html", theNumber=n)
 
 
-@app.route("/number_odd_or_even/<int:n>")
+@app.route("/number_odd_or_even/<int:n>", strict_slashes=False)
 def oddEven(n):
     """display a HTML page odd-even"""
     if n.__class__ is int:
