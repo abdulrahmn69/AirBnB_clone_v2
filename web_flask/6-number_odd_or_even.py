@@ -43,8 +43,7 @@ def python(text="is cool"):
 @app.route("/number/<int:n>", strict_slashes=False)
 def number(n):
     """display <n> is a number"""
-    if n.__class__ is int:
-        return f"{escape(n)} is a number"
+    return f"{escape(n)} is a number"
 
 
 @app.route("/number_template/<int:n>", strict_slashes=False)
