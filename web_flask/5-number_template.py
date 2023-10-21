@@ -37,7 +37,7 @@ def python(text="is cool"):
     """display python <text>!"""
     if (text):
         text = text.replace("_", " ")
-    return f"python, {escape(text)}"
+    return f"Python {escape(text)}"
 
 
 @app.route("/number/<int:n>", strict_slashes=False)
